@@ -1,11 +1,15 @@
 package academy.android.vietnam.trungnt.demofirebase;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.firebase.client.Firebase;
+import com.firebase.ui.FirebaseListAdapter;
+import com.firebase.ui.auth.core.AuthProviderType;
+import com.firebase.ui.auth.core.FirebaseLoginBaseActivity;
+import com.firebase.ui.auth.core.FirebaseLoginError;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends FirebaseLoginBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
